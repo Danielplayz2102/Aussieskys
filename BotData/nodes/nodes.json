@@ -1,0 +1,441 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "react",
+      "guid": "ef8703ee-f110-4fed-ad76-661e60d54e45",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "419a0eaa-0dd4-49ad-8ab8-11ed8cd8c03f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 40,
+      "y": 81
+    },
+    {
+      "type": "response",
+      "name": "reaction menu",
+      "guid": "7ffb5fcd-8384-450e-90fb-5c1bd835fda4",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "reactionmenu",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "888bb4df-2be2-4240-bb0a-0a4fc4a2b41d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "419a0eaa-0dd4-49ad-8ab8-11ed8cd8c03f"
+        }
+      ],
+      "x": 399,
+      "y": 82,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "FFFF00",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "➢ | No toxicity, racism, offensive statements and/or arguments.\n\n➢ | No NSFW content. This includes (but is not limited to) nude, gore, pornographic material.\n\n➢ | No malicious links or IP grabbers. Hacking or exploiting through program based intentions is not allowed.\n\n➢ | Do not ask for roles, or any other things in the server. This is not a place to buy or sell things.\n\n➢ | Use channels for their correct purpose.\n\n➢ | Pinging Hermes is not allowed, doing so will result in a mute, further infractions leading to a kick or ban.\n\n➢ | Do not ping @ADMIN 's for no reason.\n\n➢ | Staff Members have the final say, arguing with them wil result in you facing consequences.",
+        "",
+        "",
+        "",
+        "false",
+        "reactionmenu",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Verify",
+              "customid": "0",
+              "style": "SUCCESS",
+              "emoji": "",
+              "URL": ""
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "rules1",
+      "guid": "419a0eaa-0dd4-49ad-8ab8-11ed8cd8c03f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7ffb5fcd-8384-450e-90fb-5c1bd835fda4"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ef8703ee-f110-4fed-ad76-661e60d54e45"
+        }
+      ],
+      "x": 216,
+      "y": 80,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FFFF",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "https://thumbs.gfycat.com/HighLightheartedGreatdane-small.gif",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "listener",
+      "guid": "888bb4df-2be2-4240-bb0a-0a4fc4a2b41d",
+      "reactionFields": [
+        "✅"
+      ],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "✅",
+          "connections": [
+            "8fa75a85-48ac-4412-abc9-df0894059df3"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7ffb5fcd-8384-450e-90fb-5c1bd835fda4"
+        }
+      ],
+      "x": 572,
+      "y": 90,
+      "rtype": "Reaction",
+      "rsubtype": "Add Reaction Listener",
+      "formdata": [
+        "${tempVars.reactionmenu.id}",
+        "600",
+        "reactionemoji",
+        "reactionuser",
+        "BOOL_TRUE@@"
+      ],
+      "formnames": [
+        "message",
+        "duration",
+        "reactionemoji",
+        "reactionuser",
+        "react"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "add verify",
+      "guid": "8fa75a85-48ac-4412-abc9-df0894059df3",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "888bb4df-2be2-4240-bb0a-0a4fc4a2b41d"
+        }
+      ],
+      "x": 750,
+      "y": 93,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.reactionuser.id}",
+        "VIP"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "ticket",
+      "guid": "15f2dd7f-8698-4fc3-b95b-fb745538885d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ed5f6d08-8c10-4266-b6a4-dac66a3c7706"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 50,
+      "y": 239,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "delete command",
+      "guid": "ed5f6d08-8c10-4266-b6a4-dac66a3c7706",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "cc20ca1c-a4e1-4276-be5f-6e901b73f2cd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "15f2dd7f-8698-4fc3-b95b-fb745538885d"
+        }
+      ],
+      "x": 238,
+      "y": 221,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "1"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "embed",
+      "guid": "b4724b89-dab2-4c75-9e0e-a2acfebedb48",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9652ea91-fd91-4d88-8e1f-8f95e55ec606"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 53,
+      "y": 398
+    },
+    {
+      "type": "response",
+      "name": "rules1_1",
+      "guid": "9652ea91-fd91-4d88-8e1f-8f95e55ec606",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b4724b89-dab2-4c75-9e0e-a2acfebedb48"
+        }
+      ],
+      "x": 236,
+      "y": 391,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00FFFF",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "https://thumbs.gfycat.com/HighLightheartedGreatdane-small.gif",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "ticket react",
+      "guid": "cc20ca1c-a4e1-4276-be5f-6e901b73f2cd",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ed5f6d08-8c10-4266-b6a4-dac66a3c7706"
+        }
+      ],
+      "x": 415,
+      "y": 241,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "00B000",
+        "Get Support",
+        "",
+        "",
+        "",
+        "",
+        "Welcome to Support channel\n\nPlease click he relevant button below, and a support ticket ill be opened for you\n",
+        "",
+        "https://ticketsbot.net/assets/img/logo.png",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "✉️ support",
+              "customid": "1",
+              "style": "SUCCESS",
+              "emoji": "",
+              "URL": ""
+            },
+            {
+              "label": "report",
+              "customid": "2",
+              "style": "DANGER",
+              "emoji": "",
+              "URL": ""
+            },
+            {
+              "label": "appeal",
+              "customid": "3",
+              "style": "SECONDARY",
+              "emoji": "",
+              "URL": ""
+            }
+          ]
+        },
+        {
+          "rowtype": "button"
+        }
+      ],
+      "valueFields": []
+    }
+  ]
+}

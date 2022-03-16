@@ -1,0 +1,1678 @@
+{
+  "nodes": [
+    {
+      "type": "event",
+      "name": "User Joins Server",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "newuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 90,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Any Message",
+      "guid": "49ebbc23-2903-4f05-ab69-bc9ecb4f8888",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 101,
+      "y": 400,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Kicked",
+      "guid": "69ebbc23-2903-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "kickuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 99,
+      "y": 200,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Banned",
+      "guid": "77ebbc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "user": "banuser"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 300,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Bot Initialization",
+      "guid": "0101bc23-2003-4f05-ab69-bc9ecb4f067e",
+      "variables": {},
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 500,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Create",
+      "guid": "3333bc23-2993-4f05-ab69-bc9ecb4f067e",
+      "variables": {
+        "channel": "createdchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 610,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Delete",
+      "guid": "3387bc23-2993-4f05-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "deletedchannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 720,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Pins Update",
+      "guid": "1287bc23-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatepinschannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 830,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Channel Update",
+      "guid": "0009zzv3-2993-dudu-ab69-bc9ecb49877e",
+      "variables": {
+        "channel": "updatechannel"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 940,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Create",
+      "guid": "0008zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "createdemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1050,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Delete",
+      "guid": "0028zzv3-2993-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "deletedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1160,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Emoji Update",
+      "guid": "1128zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": "updatedemoji"
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1270,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Ban Remove",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1370,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Create",
+      "guid": "0909zzv3-2773-dudu-3456-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1480,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Delete",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hhb49877e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1590,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Available",
+      "guid": "0909zzv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1700,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Speaking",
+      "guid": "09uuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1810,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Member Update",
+      "guid": "0yyuuiv3-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 1920,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Unavailable",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9hh020202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2030,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Guild Update",
+      "guid": "0yyuukkk-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2140,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Delete",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9890202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2250,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Message Update",
+      "guid": "0y111112-2773-dudu-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2360,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Create",
+      "guid": "0y111112-2773-d44u-ab69-bc9h9333202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2470,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Delete",
+      "guid": "0y111112-2773-d44u-ab69-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2580,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Role Update",
+      "guid": "0y111pg2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2690,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Typing Start",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555633202e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2800,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "User Update",
+      "guid": "0y1737g2-2773-d44u-ayu9-b5555tttyt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 2910,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Button Interaction",
+      "guid": "0y1700g2-2773-d44u-ayu9-b5555886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "3deb5366-e042-4d57-8dab-6515492f0e1b",
+            "603a6ea8-3904-4800-b01a-1fabfe68a0e0",
+            "f3afadc1-0bd0-4194-81fc-051774710984",
+            "408100e5-220d-437a-ab35-a34228ed58d3",
+            "19c2eea2-e939-41be-a544-376a029e918e"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 100,
+      "y": 3021,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Select Interaction",
+      "guid": "0y17qzg2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 13,
+      "y": 3225,
+      "perms": []
+    },
+    {
+      "type": "event",
+      "name": "Command Interaction",
+      "guid": "0y17nnm2-2773-pp4u-ayu9-b55q4886yt2e",
+      "variables": {
+        "channel": ""
+      },
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": []
+        }
+      ],
+      "inputs": [],
+      "x": 97,
+      "y": 3326,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "switch case",
+      "guid": "3deb5366-e042-4d57-8dab-6515492f0e1b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "1",
+          "connections": [
+            "461e0d32-be0e-4db6-9bbb-72478f336f23"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 313,
+      "y": 2892,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "1"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "create",
+      "guid": "531cbadc-c116-400f-a458-5630e7f5e2ce",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ticketchannel",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "1b704943-b58c-4e39-b6a7-14693238c685"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "461e0d32-be0e-4db6-9bbb-72478f336f23"
+        }
+      ],
+      "x": 696,
+      "y": 2912,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "Support_ticket:${tempVars.buttoninteraction.member.id}",
+        "953620762814730240",
+        "",
+        "Text",
+        "ticketchannel",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wait",
+      "guid": "1b704943-b58c-4e39-b6a7-14693238c685",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "455d4891-3dd9-4c61-a053-1508e7918b3b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "531cbadc-c116-400f-a458-5630e7f5e2ce"
+        }
+      ],
+      "x": 869,
+      "y": 2912,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permseveryone",
+      "guid": "455d4891-3dd9-4c61-a053-1508e7918b3b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "711e27a7-9130-45c5-a5a2-c54f4b0ae6a6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1b704943-b58c-4e39-b6a7-14693238c685"
+        }
+      ],
+      "x": 1054,
+      "y": 2915,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "951791985050652693",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permstaff",
+      "guid": "711e27a7-9130-45c5-a5a2-c54f4b0ae6a6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "df0aaa38-3f63-4786-b9fd-481f1549bb6a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "455d4891-3dd9-4c61-a053-1508e7918b3b"
+        }
+      ],
+      "x": 1225,
+      "y": 2921,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "953620762814730240",
+        "951792816210714644",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "permuser",
+      "guid": "df0aaa38-3f63-4786-b9fd-481f1549bb6a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "dfc605dc-5fe3-4bab-8408-7c4697e068bd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "711e27a7-9130-45c5-a5a2-c54f4b0ae6a6"
+        }
+      ],
+      "x": 1401,
+      "y": 2917,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "${tempVars.buttoninteraction.member.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "switch case_1",
+      "guid": "603a6ea8-3904-4800-b01a-1fabfe68a0e0",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "close",
+          "connections": [
+            "2723b6cb-cf88-4af3-b25d-ea519fa63fe7"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 304,
+      "y": 3266,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "close"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "channel close",
+      "guid": "2723b6cb-cf88-4af3-b25d-ea519fa63fe7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "603a6ea8-3904-4800-b01a-1fabfe68a0e0"
+        }
+      ],
+      "x": 513,
+      "y": 3265,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        ""
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "message delete",
+      "guid": "461e0d32-be0e-4db6-9bbb-72478f336f23",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "531cbadc-c116-400f-a458-5630e7f5e2ce"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3deb5366-e042-4d57-8dab-6515492f0e1b"
+        }
+      ],
+      "x": 503,
+      "y": 2896,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "1"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "switch case_2",
+      "guid": "f3afadc1-0bd0-4194-81fc-051774710984",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "0",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 339,
+      "y": 2748,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "0"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "switch case_3",
+      "guid": "408100e5-220d-437a-ab35-a34228ed58d3",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "2",
+          "connections": [
+            "9a96b242-3972-4f60-a895-dc976377c652"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 311,
+      "y": 3014,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "2"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "message delete_1",
+      "guid": "9a96b242-3972-4f60-a895-dc976377c652",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b3a7ddfa-c1e4-46ad-9892-a9f412d84d51"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "408100e5-220d-437a-ab35-a34228ed58d3"
+        }
+      ],
+      "x": 503,
+      "y": 2998,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "1"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "create_1",
+      "guid": "b3a7ddfa-c1e4-46ad-9892-a9f412d84d51",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c3a140c7-17e9-476a-9a10-a2677e39fad7"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9a96b242-3972-4f60-a895-dc976377c652"
+        }
+      ],
+      "x": 695,
+      "y": 3023,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "Report_ticket:${tempVars.buttoninteraction.member.id}",
+        "953620762814730240",
+        "",
+        "Text",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "switch case_3_1",
+      "guid": "19c2eea2-e939-41be-a544-376a029e918e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "3",
+          "connections": [
+            "5865c072-2300-4d8e-a9ad-8ca6485f0fff"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0y1700g2-2773-d44u-ayu9-b5555886yt2e"
+        }
+      ],
+      "x": 309,
+      "y": 3125,
+      "rtype": "Control",
+      "rsubtype": "Switch Case",
+      "formdata": [
+        "${tempVars.buttoninteraction.customId}"
+      ],
+      "formnames": [
+        "varname",
+        "switchvalue1"
+      ],
+      "messageActionRows": [],
+      "valueFields": [
+        "3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "message delete_1_1",
+      "guid": "5865c072-2300-4d8e-a9ad-8ca6485f0fff",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d1fe10d4-3091-4457-bfe5-652abc72e965"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "19c2eea2-e939-41be-a544-376a029e918e"
+        }
+      ],
+      "x": 499,
+      "y": 3123,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${tempVars.buttoninteraction.channelId}",
+        "1"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "create_1_1",
+      "guid": "d1fe10d4-3091-4457-bfe5-652abc72e965",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c6f1d4e1-d548-48cd-b8ea-d58a15f364d5"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5865c072-2300-4d8e-a9ad-8ca6485f0fff"
+        }
+      ],
+      "x": 692,
+      "y": 3144,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "appeal_ticket:${tempVars.buttoninteraction.member.id}",
+        "953620762814730240",
+        "",
+        "Text",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ticket message",
+      "guid": "dfc605dc-5fe3-4bab-8408-7c4697e068bd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "df0aaa38-3f63-4786-b9fd-481f1549bb6a"
+        }
+      ],
+      "x": 1587,
+      "y": 2920,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "00FFF7",
+        "Thanks for Requesting Support",
+        "",
+        "",
+        "",
+        "",
+        "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [
+        {
+          "rowtype": "button",
+          "buttons": [
+            {
+              "label": "Close",
+              "customid": "close",
+              "style": "DANGER",
+              "emoji": "",
+              "URL": ""
+            }
+          ]
+        }
+      ],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "wait_1",
+      "guid": "c3a140c7-17e9-476a-9a10-a2677e39fad7",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "61b70496-83f3-4db1-9ec8-6b6cb05c46af"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b3a7ddfa-c1e4-46ad-9892-a9f412d84d51"
+        }
+      ],
+      "x": 878,
+      "y": 3029,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "wait_1_1",
+      "guid": "c6f1d4e1-d548-48cd-b8ea-d58a15f364d5",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8de10526-2fe3-416b-a0c2-2ee3dedd1dfb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d1fe10d4-3091-4457-bfe5-652abc72e965"
+        }
+      ],
+      "x": 881,
+      "y": 3144,
+      "rtype": "Control",
+      "rsubtype": "Wait",
+      "formdata": [
+        "1",
+        "seconds"
+      ],
+      "formnames": [
+        "waitduration",
+        "unit"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permseveryone_1",
+      "guid": "61b70496-83f3-4db1-9ec8-6b6cb05c46af",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "35ffe074-2936-4323-bd6f-02f40b29b196"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c3a140c7-17e9-476a-9a10-a2677e39fad7"
+        }
+      ],
+      "x": 1058,
+      "y": 3029,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "951791985050652693",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permseveryone_1_1",
+      "guid": "8de10526-2fe3-416b-a0c2-2ee3dedd1dfb",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "e1aecdc9-529d-467f-a6c5-1fa2e9e30441"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c6f1d4e1-d548-48cd-b8ea-d58a15f364d5"
+        }
+      ],
+      "x": 1056,
+      "y": 3159,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "951791985050652693",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permstaff_1",
+      "guid": "35ffe074-2936-4323-bd6f-02f40b29b196",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ac0218cd-f5de-49b2-942d-dea8939f85a3"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "61b70496-83f3-4db1-9ec8-6b6cb05c46af"
+        }
+      ],
+      "x": 1228,
+      "y": 3044,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "953620762814730240",
+        "951792816210714644",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permstaff_1_1",
+      "guid": "e1aecdc9-529d-467f-a6c5-1fa2e9e30441",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8ae70e34-4286-46dd-907b-27a4771653cf"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8de10526-2fe3-416b-a0c2-2ee3dedd1dfb"
+        }
+      ],
+      "x": 1235,
+      "y": 3176,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "953620762814730240",
+        "951792816210714644",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "MANAGE_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permuser_1",
+      "guid": "ac0218cd-f5de-49b2-942d-dea8939f85a3",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "e9c4f136-7101-4a06-aa75-c525976b00be"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "35ffe074-2936-4323-bd6f-02f40b29b196"
+        }
+      ],
+      "x": 1403,
+      "y": 3042,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "${tempVars.buttoninteraction.member.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "permuser_1_1",
+      "guid": "8ae70e34-4286-46dd-907b-27a4771653cf",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "840dfd7f-32c3-4a19-9501-fd2465d9f4b2"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e1aecdc9-529d-467f-a6c5-1fa2e9e30441"
+        }
+      ],
+      "x": 1410,
+      "y": 3183,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "${tempVars.buttoninteraction.member.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "ticket message_1",
+      "guid": "e9c4f136-7101-4a06-aa75-c525976b00be",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ac0218cd-f5de-49b2-942d-dea8939f85a3"
+        }
+      ],
+      "x": 1594,
+      "y": 3039,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "00FFF7",
+        "Thanks for Requesting Support",
+        "",
+        "",
+        "",
+        "",
+        "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "ticket message_1_1",
+      "guid": "840dfd7f-32c3-4a19-9501-fd2465d9f4b2",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8ae70e34-4286-46dd-907b-27a4771653cf"
+        }
+      ],
+      "x": 1610,
+      "y": 3186,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.ticketchannel.id}",
+        "00FFF7",
+        "Thanks for Requesting Support",
+        "",
+        "",
+        "",
+        "",
+        "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": []
+    }
+  ]
+}

@@ -1,0 +1,174 @@
+{
+  "command": [
+    {
+      "name": "react",
+      "actions": [
+        {
+          "name": "rules1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00FFFF",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "https://thumbs.gfycat.com/HighLightheartedGreatdane-small.gif",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "reaction menu",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "Verify",
+                  "customid": "0",
+                  "style": "SUCCESS",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "FFFF00",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "➢ | No toxicity, racism, offensive statements and/or arguments.\n\n➢ | No NSFW content. This includes (but is not limited to) nude, gore, pornographic material.\n\n➢ | No malicious links or IP grabbers. Hacking or exploiting through program based intentions is not allowed.\n\n➢ | Do not ask for roles, or any other things in the server. This is not a place to buy or sell things.\n\n➢ | Use channels for their correct purpose.\n\n➢ | Pinging Hermes is not allowed, doing so will result in a mute, further infractions leading to a kick or ban.\n\n➢ | Do not ping @ADMIN 's for no reason.\n\n➢ | Staff Members have the final say, arguing with them wil result in you facing consequences.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "reactionmenu",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "listener",
+          "category": "Reaction",
+          "type": "Add Reaction Listener",
+          "reactionActions": {
+            "✅": [
+              {
+                "name": "add verify",
+                "category": "User Action",
+                "type": "Add Role to User",
+                "messageActionRows": [],
+                "user": "${tempVars.reactionuser.id}",
+                "rolename": "VIP"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "message": "${tempVars.reactionmenu.id}",
+          "duration": "600",
+          "reactionemoji": "reactionemoji",
+          "reactionuser": "reactionuser",
+          "react": "BOOL_TRUE@@"
+        }
+      ]
+    },
+    {
+      "name": "ticket",
+      "perms": [],
+      "actions": [
+        {
+          "name": "delete command",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "1"
+        },
+        {
+          "name": "ticket react",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [
+            {
+              "rowtype": "button",
+              "buttons": [
+                {
+                  "label": "✉️ support",
+                  "customid": "1",
+                  "style": "SUCCESS",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "report",
+                  "customid": "2",
+                  "style": "DANGER",
+                  "emoji": "",
+                  "URL": ""
+                },
+                {
+                  "label": "appeal",
+                  "customid": "3",
+                  "style": "SECONDARY",
+                  "emoji": "",
+                  "URL": ""
+                }
+              ]
+            },
+            {
+              "rowtype": "button"
+            }
+          ],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00B000",
+          "title": "Get Support",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Welcome to Support channel\n\nPlease click he relevant button below, and a support ticket ill be opened for you\n",
+          "thumbnail": "",
+          "image": "https://ticketsbot.net/assets/img/logo.png",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "embed",
+      "actions": [
+        {
+          "name": "rules1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "00FFFF",
+          "title": "",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "https://thumbs.gfycat.com/HighLightheartedGreatdane-small.gif",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    }
+  ]
+}

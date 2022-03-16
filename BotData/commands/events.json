@@ -1,0 +1,619 @@
+{
+  "command": [
+    {
+      "name": "User Joins Server",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "newuser"
+      }
+    },
+    {
+      "name": "Any Message",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "User Kicked",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "kickuser"
+      }
+    },
+    {
+      "name": "User Banned",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "user": "banuser"
+      }
+    },
+    {
+      "name": "Bot Initialization",
+      "perms": [],
+      "actions": [],
+      "var": {}
+    },
+    {
+      "name": "Channel Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdchannel"
+      }
+    },
+    {
+      "name": "Channel Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedchannel"
+      }
+    },
+    {
+      "name": "Channel Pins Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatepinschannel"
+      }
+    },
+    {
+      "name": "Channel Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatechannel"
+      }
+    },
+    {
+      "name": "Emoji Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "createdemoji"
+      }
+    },
+    {
+      "name": "Emoji Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "deletedemoji"
+      }
+    },
+    {
+      "name": "Emoji Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": "updatedemoji"
+      }
+    },
+    {
+      "name": "Guild Ban Remove",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Available",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Speaking",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Member Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Unavailable",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Guild Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Message Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Create",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Delete",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Role Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Typing Start",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "User Update",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Button Interaction",
+      "perms": [],
+      "actions": [
+        {
+          "name": "switch case",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "1": [
+              {
+                "name": "message delete",
+                "category": "Channel Action",
+                "type": "Delete All Messages",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "msgcount": "1"
+              },
+              {
+                "name": "create",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "Support_ticket:${tempVars.buttoninteraction.member.id}",
+                "chancategory": "953620762814730240",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "ticketchannel",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "wait",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "permseveryone",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "951791985050652693",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "permstaff",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "953620762814730240",
+                "permid": "951792816210714644",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "permuser",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket message",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [
+                  {
+                    "rowtype": "button",
+                    "buttons": [
+                      {
+                        "label": "Close",
+                        "customid": "close",
+                        "style": "DANGER",
+                        "emoji": "",
+                        "URL": ""
+                      }
+                    ]
+                  }
+                ],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "color": "00FFF7",
+                "title": "Thanks for Requesting Support",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "switch case_1",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "close": [
+              {
+                "name": "channel close",
+                "category": "Channel Action",
+                "type": "Delete Channel",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "reason": ""
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "switch case_2",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "0": []
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "switch case_3",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "2": [
+              {
+                "name": "message delete_1",
+                "category": "Channel Action",
+                "type": "Delete All Messages",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "msgcount": "1"
+              },
+              {
+                "name": "create_1",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "Report_ticket:${tempVars.buttoninteraction.member.id}",
+                "chancategory": "953620762814730240",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "wait_1",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "permseveryone_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "951791985050652693",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "permstaff_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "953620762814730240",
+                "permid": "951792816210714644",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "permuser_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket message_1",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "color": "00FFF7",
+                "title": "Thanks for Requesting Support",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        },
+        {
+          "name": "switch case_3_1",
+          "category": "Control",
+          "type": "Switch Case",
+          "valueActions": {
+            "3": [
+              {
+                "name": "message delete_1_1",
+                "category": "Channel Action",
+                "type": "Delete All Messages",
+                "messageActionRows": [],
+                "channelname": "${tempVars.buttoninteraction.channelId}",
+                "msgcount": "1"
+              },
+              {
+                "name": "create_1_1",
+                "category": "Channel Action",
+                "type": "Create Channel",
+                "messageActionRows": [],
+                "channelname": "appeal_ticket:${tempVars.buttoninteraction.member.id}",
+                "chancategory": "953620762814730240",
+                "reason": "",
+                "channeltype": "Text",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              },
+              {
+                "name": "wait_1_1",
+                "category": "Control",
+                "type": "Wait",
+                "messageActionRows": [],
+                "waitduration": "1",
+                "unit": "seconds"
+              },
+              {
+                "name": "permseveryone_1_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "951791985050652693",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Deny"
+              },
+              {
+                "name": "permstaff_1_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "953620762814730240",
+                "permid": "951792816210714644",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "MANAGE_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "permuser_1_1",
+                "category": "Channel Action",
+                "type": "Update Channel Permissions",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "permid": "${tempVars.buttoninteraction.member.id}",
+                "permissions": [
+                  "VIEW_CHANNEL",
+                  "SEND_MESSAGES",
+                  "SEND_TTS_MESSAGES",
+                  "EMBED_LINKS",
+                  "ATTACH_FILES",
+                  "READ_MESSAGE_HISTORY"
+                ],
+                "allow": "Allow"
+              },
+              {
+                "name": "ticket message_1_1",
+                "category": "Message",
+                "type": "Send Embed",
+                "messageActionRows": [],
+                "channelname": "${tempVars.ticketchannel.id}",
+                "color": "00FFF7",
+                "title": "Thanks for Requesting Support",
+                "url": "",
+                "authorname": "",
+                "authorimageurl": "",
+                "authorlink": "",
+                "description": "Thanks for contcting support, Our staff members ill be be with you shortly and hope to solve your issues. If you have any informationleave it below\n\nThanks | Mods",
+                "thumbnail": "",
+                "image": "",
+                "footer": "",
+                "timestamp": "false",
+                "savetovariable": "",
+                "savetovariabletype": "temp"
+              }
+            ]
+          },
+          "messageActionRows": [],
+          "varname": "${tempVars.buttoninteraction.customId}"
+        }
+      ],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Select Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    },
+    {
+      "name": "Command Interaction",
+      "perms": [],
+      "actions": [],
+      "var": {
+        "channel": ""
+      }
+    }
+  ]
+}
